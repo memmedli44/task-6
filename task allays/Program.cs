@@ -5,35 +5,35 @@
         static void Main(string[] args)
         {
             #region task 1
-            //Console.Write("Massivi daxil edin-");
-            //int mas = int.Parse(Console.ReadLine());
-            //int[] massiv = new int[mas];
-            //bool silsiledir = true;
-            //for (int i = 0; i < massiv.Length; i++)
-            //{
-            //    Console.Write($"Massiv[{i}]=");
-            //    massiv[i] = int.Parse(Console.ReadLine());
+            Console.Write("Massivi daxil edin-");
+            int mas = int.Parse(Console.ReadLine());
+            int[] massiv = new int[mas];
+            bool silsiledir = true;
+            for (int i = 0; i < massiv.Length; i++)
+            {
+                Console.Write($"Massiv[{i}]=");
+                massiv[i] = int.Parse(Console.ReadLine());
 
-            //}
-            //int silsile1;
-            //int silsile = (int)(massiv[1] - massiv[0]);
-            //for (int i = 1; i < massiv.Length - 1; i++)
+            }
+            int silsile1;
+            int silsile = (int)(massiv[1] - massiv[0]);
+            for (int i = 1; i < massiv.Length - 1; i++)
 
-            //{
-            //    silsile1 = (int)(massiv[i + 1] - massiv[i]);
-            //    if (silsile != silsile1)
-            //    {
-            //        Console.WriteLine("Massiv ededi silsile deyil");
-            //        silsiledir = false;
-            //        break;
-            //    }
-            //    if (silsiledir)
-            //        Console.WriteLine("Massiv ededi silsiledir");
+            {
+                silsile1 = (int)(massiv[i + 1] - massiv[i]);
+                if (silsile != silsile1)
+                {
+                    Console.WriteLine("Massiv ededi silsile deyil");
+                    silsiledir = false;
+                    break;
+                }
+                if (silsiledir)
+                    Console.WriteLine("Massiv ededi silsiledir");
 
-            //}      
+            }
             #endregion
 
-            #region  Massivde tek ededlerin siyahisi
+            #region  Task2.1
             //Console.Write("Massivi daxil edin: ");
             //int mass = int.Parse(Console.ReadLine());
             //int[] massiv = new int[mass];
@@ -53,7 +53,7 @@
             //}
             #endregion
 
-            #region Massivdeki menfi ededi tapmaq 
+            #region Task2.2
             //Console.Write("Massivin sayini daxil edin: ");
             //int mass = int.Parse(Console.ReadLine());
             //int[] massiv = new int[mass];
@@ -83,11 +83,11 @@
             //}
             #endregion
 
-            #region kvadrat kokun tam eded olub olmamasini yoxlamaq
+            #region Task2.3
             //Console.Write("Massivin sayini daxil edin: ");
             //int mass = int.Parse(Console.ReadLine());
             //int[] massiv = new int[mass];
-            //bool kokalti = false;
+            //bool kok = false;
 
             //for (int i = 0; i < massiv.Length; i++)
             //{
@@ -97,12 +97,12 @@
             //}
             //  for (int i = 0; i < massiv.Length; i++)
             //  {
-            //    double kok = (double)Math.Sqrt(massiv[i]);
-            //    if (kok % 1 == 0)
+            //    double a= (double)Math.Sqrt(massiv[i]);
+            //    if (a % 1 == 0)
             //    {
 
             //        Console.WriteLine($"Massif[{i}]= {massiv[i]}");
-            //        kokalti = true;
+            //        kok = true;
 
 
             //    }
@@ -110,7 +110,7 @@
             //    else 
 
             //    {
-            //        Console.WriteLine($"Massiv[{i}]= {massiv[i]} Kvadrat koku tam eded deyil");
+            //        Console.WriteLine($"Massiv[{i}]= {massiv[i]} Kvadrat koku tam deyil ");
             //    }
 
 
@@ -118,21 +118,24 @@
             //  }
             #endregion
 
-            #region massivin elementlerini tersine yazmaq
+
+            #region Task 4
+
+            //            #region massivin elementlerini tersine yazmaq
             //Console.Write("Massivin sayini daxil edin: ");
-            //int mass = int.Parse(Console.ReadLine());
-            //int[] massiv = new int[mass];
+            //            int mass = int.Parse(Console.ReadLine());
+            //            int[] massiv = new int[mass];
 
-            //for (int i = 0; i < massiv.Length; i++)
-            //{
-            //    Console.Write($"Massiv[{i}]=");
-            //    massiv[i] = int.Parse(Console.ReadLine());
+            //            for (int i = 0; i < massiv.Length; i++)
+            //            {
+            //                Console.Write($"Massiv[{i}]=");
+            //                massiv[i] = int.Parse(Console.ReadLine());
 
 
-            //}
+            //            }
 
-            //    Array.Reverse(massiv);
-            //    Console.WriteLine("Reversed massiv: [{0}]",  string.Join(", ", massiv));
+            //            Array.Reverse(massiv);
+            //            Console.WriteLine("Reversed massiv: [{0}]", string.Join(", ", massiv));
 
             #endregion
 
